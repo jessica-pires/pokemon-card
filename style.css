@@ -2,6 +2,8 @@
     --font-family: 'Roboto', sans-serif;
     --font-size: 16px;
     --color-black: #25252b;
+    --color-gray:#efefef;
+    --white-color:#ffff;
     
 }
 
@@ -19,6 +21,7 @@ a {
 body{
     font-family: var(--font-family);
     font-size: var(--font-size);
+    background-color: var(--color-gray);
     
 }
 .container{
@@ -34,9 +37,15 @@ body{
     height: 8rem;
 }
 .pokemon__logo{
-    width: 250px;
+    width: 300px;
 }
 /* -----pokebola------- */
+
+.div__pokebola{
+    width: 250px;
+    
+}
+
 .pokebola__image{
     width: 250px;
     cursor: pointer;
@@ -69,6 +78,18 @@ body{
 }
 /* ---------pokemon-card------- */
 
+.pokemon__wrapperImage{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .pokemon{
     display: flex;
     align-items: center;
@@ -76,16 +97,38 @@ body{
     flex-wrap: wrap;
     gap: 1rem;
     background: linear-gradient(45deg, #ffeb3b, #ff9800);
+    color: var(--white-color);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
 }
 
 
+.pokemon__image{
+    width: 100%;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5));
+}
 
+/* ------------descricao do card---------- */
+
+.pokemon__name{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pokemon__abilities{
+    text-transform: capitalize;
+    margin-left: 18px;
+}
 /*  ----rodape-------- */
 
 .footer{
     background-color: var(--color-black);
-    color: white;
+    color: var(--white-color);
     text-align: center;
     padding: 1rem 0 ;
     height: 52px;
+    text-transform: uppercase;
 }
